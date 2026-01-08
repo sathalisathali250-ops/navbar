@@ -1,0 +1,104 @@
+*
+{
+    margin: 0;
+    padding: 0;
+     font-family: "Epunda Slab", serif;
+}
+body
+{
+    background-color: pink;
+}
+.menubar
+{
+    background: rgb(0, 100, 0);
+    text-align: center;
+}
+.menubar ul
+{
+    display: inline-flex;
+    list-style-type: none;
+    color: #fff;
+}
+.menubar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menubar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.active,.menubar ul li:hover
+{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+.menubar ul li:hover .submenu1
+{
+    display: block;
+    position: absolute;
+    background-color: rgb(0,100,0);
+     margin-top: 15px;
+     margin-left: -15px;  
+}
+.menubar ul li:hover .submenu1 ul
+ {
+    display: block;
+    margin: 10px; 
+}
+.menubar ul li:hover .submenu1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menubar ul li:hover .submenu1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menubar ul li:hover .submenu1 ul li a:hover
+{
+color: gold;
+}
+.menubar .fa-solid
+{
+    margin-right: 8px;
+}
+.submenu1
+{
+    display: none;
+}
+.fa-angle-double-right
+{
+float: right;
+}
+.submenu1 .fa-angle-double-right
+{
+    margin-right: 8px;
+}
+.submenu2
+{
+    display: none;
+}
+.submenu1 ul li:hover .submenu2
+{
+    position: absolute;
+    display: block;
+    margin-top: -14px;
+    margin-left:140px;
+    background: rgb(0, 100, 0);
+}
+.fa-bus
+{
+    background-color: blue;
+}
+.fa-house
+{
+    color: blue;
+    font-size: 1.3em;
+}
